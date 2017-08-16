@@ -1,0 +1,249 @@
+<mvc:View xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns:mc="sap.suite.ui.microchart" xmlns:vk="sap.ui.vk" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:opl="sap.uxap"
+	xmlns:semantic="sap.m.semantic" xmlns:LiquidFillGauge="com.pdms.og.rodpumpoverview.control"
+	controllerName="com.pdms.og.rodpumpoverview.controller.RodPumpOverview" xmlns:u="sap.ui.unified" width="100%" height="100%"
+	class="sapK5IproDSMainView">
+	<u:Shell id="myShell" icon="{viewModel&gt;/logo}">
+		<u:user>
+			<u:ShellHeadUserItem image="sap-icon://person-placeholder" username="{config>/userId}" press="onUserItemPressed"/>
+		</u:user>
+		<u:search>
+			<Text width="100%" textAlign="Center" text="Rod Pump Overview"/>
+		</u:search>
+		<u:headItems>
+			<u:ShellHeadItem icon="sap-icon://nav-back" press="onBackNav"/>
+		</u:headItems>
+		<semantic:FullscreenPage id="page" showFooter="false">
+			<semantic:content>
+				<opl:ObjectPageLayout id="ObjectPageLayout" enableLazyLoading="false">
+					<opl:headerTitle>
+						<opl:ObjectPageHeader objectTitle="Rod Pump123" 
+											  objectSubtitle="Internal Pump: Pump Stopped">
+							<ObjectAttribute title="" text=" "/>
+							<opl:actions>
+								<opl:ObjectPageHeaderActionButton icon="sap-icon://email"  type="" press="onEmailPress"/>
+								<opl:ObjectPageHeaderActionButton text="Create PM Notification" hideIcon="true" hideText="false" type="" press="toggleFooter"/>
+							</opl:actions>
+						</opl:ObjectPageHeader>
+					</opl:headerTitle>
+					<opl:headerContent>
+						<l:Grid>
+							<l:VerticalLayout>
+								<ObjectStatus title="Site" text="Betty Sue Ranch"/>
+								<ObjectStatus title="Well" text="4"/>
+							</l:VerticalLayout>
+							<l:VerticalLayout>
+								<l:layoutData>
+									<opl:ObjectPageHeaderLayoutData visibleS="false"/>
+								</l:layoutData>
+								<ObjectStatus title="Al Manufacture" text="Hughes"/>
+								<ObjectStatus title="Al Model" text="ESP-150HP"/>
+							</l:VerticalLayout>
+							<l:VerticalLayout>
+								<l:layoutData>
+									<opl:ObjectPageHeaderLayoutData visibleS="false"/>
+								</l:layoutData>
+								<ObjectStatus title="Start Date" text="01.01.2017, 16:00 hours"/>
+								<ObjectStatus title="End Date" text="01.01.2018, 17:00 hours"/>
+							</l:VerticalLayout>
+							<l:VerticalLayout>
+								<l:layoutData>
+									<opl:ObjectPageHeaderLayoutData visibleS="false"/>
+								</l:layoutData>
+								<ObjectStatus title="Status" text="Open" state="Error"/>
+							</l:VerticalLayout>
+						</l:Grid>
+					</opl:headerContent>
+					<opl:sections>
+						<opl:ObjectPageSection>
+							<opl:subSections>
+								<opl:ObjectPageSubSection>
+									<l:Grid defaultSpan="L6 M12 S12" class="sapUiSmallMarginTop">
+										<l:content>
+											<VBox>
+												<vk:Viewer id="RodViewer" height="915px"/>
+											</VBox>
+											<VBox>
+												<HBox>
+															<VBox class="sapUiLargeMarginEnd">
+																<Label text="Load Cell" class="headingStyle"/>
+																<HBox alignItems="Center">
+																	<NumericContent value="780" scale="LBF" valueColor="Neutral" state="Loaded" withMargin="false"
+																		class="sapUiSmallMarginEnd standardText" press="press"/>
+																	<core:Icon src="sap-icon://line-chart" press="handlePress" class="sapUiTinyMarginTop"/>
+																</HBox>
+															</VBox>
+															<VBox class="sapUiLargeMarginEnd">
+																<Label text="Unit Set Point" class="headingStyle"/>
+																<HBox alignItems="Center">
+																	<NumericContent value="68" scale="SPM" valueColor="Neutral" state="Loaded" withMargin="false"
+																		class="sapUiSmallMarginEnd standardText" press="press"/>
+																	<core:Icon src="sap-icon://line-chart" press="handlePress" class="sapUiSmallMarginTop"/>
+																</HBox>
+															</VBox>
+														</HBox>
+													<VBox backgroundDesign="Solid" class="sapUiSmallMarginBottom">
+													<Title text="Rod Pump Monitoring" level = "H1" class="headingStyle sapUiSmallMarginTop sapUiSmallMarginBottom sapUiSmallMarginBegin"/>
+													<l:Grid defaultSpan="L12 M12 S12" content="{/RodPumpData}">
+														<HBox>
+															<VBox class="sapUiLargeMarginEnd">
+																<Title text="Load Cell" level = "H1" class="headingStyle"/>
+																<HBox alignItems="Center">
+																	<NumericContent value="{LoadAtSurfaceLevel}" scale="LBF" valueColor="Neutral" state="Loaded" withMargin="false"
+																		class="sapUiSmallMarginEnd standardText" press="press"/>
+																	<core:Icon src="sap-icon://line-chart" press="handlePress"/>
+																</HBox>
+															</VBox>
+															<VBox class="sapUiLargeMarginEnd">
+																<Label text="Unit Set Point" class="headingStyle"/>
+																<HBox alignItems="Center">
+																	<NumericContent value="{StrokesPerMinute}" scale="SPM" valueColor="Neutral" state="Loaded" withMargin="false"
+																		class="sapUiSmallMarginEnd standardText" press="press"/>
+																	<core:Icon src="sap-icon://line-chart" press="handlePress"/>
+																</HBox>
+															</VBox>
+														</HBox>
+													</l:Grid>
+												</VBox>
+												<VBox backgroundDesign="Solid" class="sapUiSmallMarginBottom">
+														<HBox alignItems="Center" class="sapUiSmallMarginBottom">
+																<mc:ComparisonMicroChart scale="" colorPalette="#efcd00" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="{path:'viewData&gt;OilTargetRate', formatter:'.formatter.getFloat'}">
+																	<mc:data>
+																		<mc:ComparisonMicroChartData title="Oil Prod Rate" value="{path:'viewData&gt;OilProductionRate', formatter:'.formatter.getFloat'}"/>
+																	</mc:data>
+																</mc:ComparisonMicroChart>
+																<Title text="{path:'viewData&gt;OilTargetRate', formatter:'.formatter.getFloat'} BBL"/>
+															</HBox>
+															<HBox alignItems="Center" class="sapUiSmallMarginBottom">
+																<mc:ComparisonMicroChart scale="" colorPalette="#94b9c5" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="{path:'viewData&gt;GasTargetRate', formatter:'.formatter.getFloat'}">
+																	<mc:data>
+																		<mc:ComparisonMicroChartData title="Gas Prod Rate" value="{path:'viewData&gt;GasProductionRate', formatter:'.formatter.getFloat'}"/>
+																	</mc:data>
+																</mc:ComparisonMicroChart>
+																<Title text="{path:'viewData&gt;GasTargetRate', formatter:'.formatter.getFloat'} MCF"/>
+															</HBox>
+															<HBox alignItems="Center" class="sapUiSmallMarginBottom">
+																<mc:ComparisonMicroChart scale="" colorPalette="#b5d656" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="{path:'viewData&gt;MaxStrokesPerMin', formatter:'.formatter.getFloat'}">
+																	<mc:data>
+																		<mc:ComparisonMicroChartData title="Speed" value="{path:'viewData&gt;StrokesPerMinute', formatter:'.formatter.getFloat'}"/>
+																	</mc:data>
+																</mc:ComparisonMicroChart>
+																<Title text="{path:'viewData&gt;MaxStrokesPerMin', formatter:'.formatter.getFloat'} SPM"/>
+															</HBox>
+															<HBox alignItems="Center" class="sapUiSmallMarginBottom">
+																<mc:ComparisonMicroChart scale="" colorPalette="#fbc263" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="100">
+																	<mc:data>
+																		<mc:ComparisonMicroChartData title="Pump Efficiency" value="{path:'viewData&gt;PumpEfficiency', formatter:'.formatter.getFloat'}"/>
+																	</mc:data>
+																</mc:ComparisonMicroChart>
+																<Title text="100%"/>
+															</HBox>
+													<Label text="Controller Data" class="headingStyle sapUiSmallMarginTop sapUiSmallMarginBottom sapUiSmallMarginBegin"/>
+													<l:Grid defaultSpan="L12 M12 S12">
+														<VBox alignItems="End">
+															<ComboBox selectedKey="{viewModel&gt;/dynaCardType}" id="idListitem" selectionChange="onDynaCardTypeChange"
+																class="sapUiMediumMarginBegin headingStyle">
+																<core:Item key="Pump" text="Pump Card"/>
+																<core:Item key="Surface" text="Surface Card"/>
+															</ComboBox>
+														</VBox>
+														<l:VerticalLayout id="idDynacardLayout"/>
+														<LiquidFillGauge:DualLiquidFillGauge valueOil="324" targetOil="600" oilUom="Bbls" valueWater="838" targetWater="1000" waterUom="Bbls"/>
+													</l:Grid>
+												</VBox>
+												<VBox backgroundDesign="Solid">
+													<Label text="Production Data" class="sapUiLargeMarginTop sapUiSmallMarginBegin sapUiSmallMarginBottom headingStyle"/>
+													<l:Grid defaultSpan="L12 M12 S12" content="{path:'/RodPumpData'}" class="sapUiSmallMarginTop sapUiSmallMarginBottom">
+														<VBox>
+																<HBox alignItems="Center">
+																<mc:ComparisonMicroChart scale="" colorPalette="#efcd00" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="{path:'viewData&gt;OilTargetRate', formatter:'.formatter.getFloat'}">
+																	<mc:data>
+																		<mc:ComparisonMicroChartData title="Oil Prod Rate" value="{path:'viewData&gt;OilProductionRate', formatter:'.formatter.getFloat'}"/>
+																	</mc:data>
+																</mc:ComparisonMicroChart>
+																<Title text="{path:'viewData&gt;OilTargetRate', formatter:'.formatter.getFloat'} BBL"/>
+															</HBox>
+															<HBox alignItems="Center">
+																<mc:ComparisonMicroChart scale="" colorPalette="#94b9c5" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="{path:'viewData&gt;GasTargetRate', formatter:'.formatter.getFloat'}">
+																	<mc:data>
+																		<mc:ComparisonMicroChartData title="Gas Prod Rate" value="{path:'viewData&gt;GasProductionRate', formatter:'.formatter.getFloat'}"/>
+																	</mc:data>
+																</mc:ComparisonMicroChart>
+																<Title text="{path:'viewData&gt;GasTargetRate', formatter:'.formatter.getFloat'} MCF"/>
+															</HBox>
+															<HBox alignItems="Center">
+																<mc:ComparisonMicroChart scale="" colorPalette="#b5d656" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="{path:'viewData&gt;MaxStrokesPerMin', formatter:'.formatter.getFloat'}">
+																	<mc:data>
+																		<mc:ComparisonMicroChartData title="Speed" value="{path:'viewData&gt;StrokesPerMinute', formatter:'.formatter.getFloat'}"/>
+																	</mc:data>
+																</mc:ComparisonMicroChart>
+																<Title text="{path:'viewData&gt;MaxStrokesPerMin', formatter:'.formatter.getFloat'} SPM"/>
+															</HBox>
+															<HBox alignItems="Center">
+																<mc:ComparisonMicroChart scale="" colorPalette="#fbc263" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle" press="press" width="27rem" maxValue="100">
+																	<mc:data>
+																		<mc:ComparisonMicroChartData title="Pump Efficiency" value="{path:'viewData&gt;PumpEfficiency', formatter:'.formatter.getFloat'}"/>
+																	</mc:data>
+																</mc:ComparisonMicroChart>
+																<Title text="100%"/>
+															</HBox>
+															<HBox class="sapUiMediumMarginBottom">
+																<VBox class="sapUiLargeMarginEnd">
+																	<Label text="Tubing Pressure" class="headingStyle"/>
+																	<HBox alignItems="Center">
+																		<NumericContent value="{TubingPressure}" scale="Psi" valueColor="Neutral" state="Loaded" withMargin="false" class="sapUiSmallMarginEnd"/>
+																	</HBox>
+																</VBox>
+																<VBox class="sapUiLargeMarginEnd">
+																	<Label text="Casing Pressure" class="headingStyle"/>
+																	<HBox alignItems="Center">
+																		<NumericContent value="{CasingPressure}" scale="Psi" valueColor="Neutral" state="Loaded" withMargin="false" class="sapUiSmallMarginEnd"/>
+																	</HBox>
+																</VBox>
+																<VBox class="sapUiLargeMarginEnd">
+																	<Label text="Line Pressure" class="headingStyle"/>
+																	<HBox alignItems="Center">
+																		<NumericContent value="{LinePressure}" scale="Psi" valueColor="Neutral" state="Loaded" withMargin="false" class="sapUiSmallMarginEnd"
+																			press="press"/>
+																	</HBox>
+																</VBox>
+															</HBox>
+															<mc:ComparisonMicroChart scale="" colorPalette="#efcd00" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle"
+																press="press" width="30rem" maxValue="300">
+																<mc:data>
+																	<mc:ComparisonMicroChartData title="Oil Prod Rate" value="220"/>
+																</mc:data>
+															</mc:ComparisonMicroChart>
+															<mc:ComparisonMicroChart scale="" colorPalette="#94b9c5" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle"
+																press="press" width="30rem" maxValue="120">
+																<mc:data>
+																	<mc:ComparisonMicroChartData title="Gas Prod Rate" value="60"/>
+																</mc:data>
+															</mc:ComparisonMicroChart>
+															<mc:ComparisonMicroChart scale="" colorPalette="#b5d656" view="Wide" shrinkable="true" class="sapUiSmallMarginBegin subheadingStyle"
+																press="press" width="30rem" maxValue="{path:'MaxStrokesPerMin', formatter:'.formatter.getFloat'}">
+																<mc:data>
+																	<mc:ComparisonMicroChartData title="Speed" value="{path:'StrokesPerMinute', formatter:'.formatter.getFloat'}"/>
+																</mc:data>
+															</mc:ComparisonMicroChart>
+															<mc:ComparisonMicroChart scale="" colorPalette="#fbc263" view="Wide" shrinkable="true"
+																class="sapUiSmallMarginBegin sapUiLargeMarginBottom subheadingStyle" press="press" width="30rem" maxValue="100">
+																<mc:data>
+																	<mc:ComparisonMicroChartData title="Pump Efficiency" value="{path:'PumpEfficiency', formatter:'.formatter.getFloat'}"/>
+																</mc:data>
+															</mc:ComparisonMicroChart>
+														</VBox>
+													</l:Grid>
+												</VBox>
+											</VBox>
+										</l:content>
+									</l:Grid>
+								</opl:ObjectPageSubSection>
+							</opl:subSections>
+						</opl:ObjectPageSection>
+					</opl:sections>
+				</opl:ObjectPageLayout>
+			</semantic:content>
+		</semantic:FullscreenPage>
+	</u:Shell>
+</mvc:View>

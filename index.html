@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>testlocal</title>
+
+		<script id="sap-ui-bootstrap"
+			src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"com.pdms.og.rodpumpoverview": "./rodpumpoverview"}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				sap.ui.require([
+					"com/pdms/og/rodpumpoverview/localService/mockserver"
+				], function (mockserver) {
+					mockserver.init();
+					new sap.m.Shell({
+						app: new sap.ui.core.ComponentContainer({
+							height : "100%",
+							name : "com.pdms.og.rodpumpoverview"
+						})
+					}).placeAt("content");
+				});
+			}); 
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+		<script src="js/liquidFillGauge.js"></script>
+	</body>
+
+</html>

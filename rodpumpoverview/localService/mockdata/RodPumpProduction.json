@@ -1,0 +1,21 @@
+[{
+	"Thing": "RD101_P101",
+	"Timestamp": "/Date(14880240000)/",
+	"OilProdRate": "150",
+	"OilprodRateUOM": "BoE",
+	"OilProdRateTarget": 200,
+	"GasProdRate": "120",
+	"GasProdRateUOM": "",
+	"GasProdRateTarget": 200,
+	"Speed": "7",
+	"SpeedUOM": "spm",
+	"SpeedTarget": "10",
+	"PumpEfficiency": "30",
+	"PumpEfficiencyUOM": "%",
+	"TubingPressure": "200",
+	"TubingPressureUOM": "Psi",
+	"CasingPressure": "175",
+	"CasingPressureUOM": "Psi",
+	"LinePressure": "200",
+	"LinePressureUOM": "Psi"
+}]

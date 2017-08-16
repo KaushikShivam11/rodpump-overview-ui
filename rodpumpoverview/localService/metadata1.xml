@@ -1,0 +1,30 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+			Namespace="default">
+			<EntityType Name="PumpType">
+				<Key>
+					<PropertyRef Name="PumpNum"/>
+				</Key>
+				<Property Name="PumpNum" Type="Edm.String" Nullable="false" MaxLength="2147483647"/>
+				<Property Name="Load" Type="Edm.Double"/>
+				<Property Name="Position" Type="Edm.Double"/>
+				<Property Name="Timestamp" Type="Edm.DateTime"/>
+			</EntityType>
+			<EntityType Name="SurfaceType">
+				<Key>
+					<PropertyRef Name="SurfaceNum"/>
+				</Key>
+				<Property Name="SurfaceNum" Type="Edm.String" Nullable="false" MaxLength="2147483647"/>
+				<Property Name="LoadAtSurface" Type="Edm.Double"/>
+				<Property Name="PositionAtSurface" Type="Edm.Double"/>
+				<Property Name="Timestamp" Type="Edm.DateTime"/>
+			</EntityType>
+			<EntityContainer Name="v2" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="Pump" EntityType="default.PumpType"/>
+				<EntitySet Name="Surface" EntityType="default.SurfaceType"/>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

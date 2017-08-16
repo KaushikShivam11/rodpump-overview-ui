@@ -1,0 +1,128 @@
+{
+	"_version": "1.1.0",
+	"sap.app": {
+		"_version": "1.1.0",
+		"id": "com.pdms.og.rodpumpoverview",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{APP_TITLE}}",
+		"description": "{{APP_DESCRIPTION}}",
+		"resources": "resources.json",
+		"ach": "ach",
+		"dataSources": {
+			"RodPump_Monitoring_Production_DataSource": {
+				"uri": "/rodpumpoverview/service/pdmsogRodPumpService.xsodata",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "rodpumpoverview/localService/metadata.xml"
+				}
+			},
+			"ControllerDataDataSource": {
+				"uri": "/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "rodpumpoverview/localService/metadata1.xml"
+				}
+			}
+		},
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.1.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_bluecrystal", "sap_belize", "sap_belize_plus"]
+	},
+	"sap.ui5": {
+		"_version": "1.1.0",
+		"rootView": {
+			"viewName": "com.pdms.og.rodpumpoverview.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.ui.comp": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.pdms.og.rodpumpoverview.i18n.i18n"
+				}
+			},
+			"": {
+				"dataSource": "RodPump_Monitoring_Production_DataSource",
+				"settings": {
+					"json": true,
+					"useBatch": true
+				}
+			},
+			"ControllerDataModel": {
+				"dataSource": "ControllerDataDataSource",
+				"settings": {
+					"json": true,
+					"useBatch": true
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "com.pdms.og.rodpumpoverview.view",
+				"controlId": "poApp",
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": ["notFound"]
+				},
+				"async": true
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "Home",
+				"target": "home"
+			}],
+			"targets": {
+				"home": {
+					"viewName": "RodPumpOverview",
+					"viewLevel": 1,
+					"viewId": "idRPOPage"
+				}
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		}
+	}
+}

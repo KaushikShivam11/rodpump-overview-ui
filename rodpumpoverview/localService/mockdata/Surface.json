@@ -1,0 +1,649 @@
+[{
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('14882065236631')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "14882065236631",
+	"LoadAtSurface": "8500",
+	"PositionAtSurface": "0",
+	"Timestamp": "/Date(1455689302179)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('14882065236632')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "14882065236632",
+	"LoadAtSurface": "8900",
+	"PositionAtSurface": "0.005",
+	"Timestamp": "/Date(1455689301979)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('14882065236633')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "14882065236633",
+	"LoadAtSurface": "8800",
+	"PositionAtSurface": "0.015",
+	"Timestamp": "/Date(1455689301865)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('14882065236634')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "14882065236634",
+	"LoadAtSurface": "8700",
+	"PositionAtSurface": "0.029",
+	"Timestamp": "/Date(1455689301742)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('14882065236635')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "14882065236635",
+	"LoadAtSurface": "8600",
+	"PositionAtSurface": "0.047",
+	"Timestamp": "/Date(1455689301062)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('14882065236636')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "14882065236636",
+	"LoadAtSurface": "8500",
+	"PositionAtSurface": "0.07",
+	"Timestamp": "/Date(1455689301496)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('14882065236637')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "14882065236637",
+	"LoadAtSurface": "8300",
+	"PositionAtSurface": "0.096",
+	"Timestamp": "/Date(1455689301037)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('14882065236638')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "14882065236638",
+	"LoadAtSurface": "8500",
+	"PositionAtSurface": "0.125",
+	"Timestamp": "/Date(1455689301255)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('14882065236639')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "14882065236639",
+	"LoadAtSurface": "8600",
+	"PositionAtSurface": "0.157",
+	"Timestamp": "/Date(1455689301136)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366310')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366310",
+	"LoadAtSurface": "8500",
+	"PositionAtSurface": "0.193",
+	"Timestamp": "/Date(1455689301001)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366311')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366311",
+	"LoadAtSurface": "8300",
+	"PositionAtSurface": "0.23",
+	"Timestamp": "/Date(1455689300895)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366312')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366312",
+	"LoadAtSurface": "8500",
+	"PositionAtSurface": "0.269",
+	"Timestamp": "/Date(1455689300783)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366313')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366313",
+	"LoadAtSurface": "8600",
+	"PositionAtSurface": "0.31",
+	"Timestamp": "/Date(1455689300583)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366314')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366314",
+	"LoadAtSurface": "8500",
+	"PositionAtSurface": "0.353",
+	"Timestamp": "/Date(1455689300465)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366315')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366315",
+	"LoadAtSurface": "8300",
+	"PositionAtSurface": "0.396",
+	"Timestamp": "/Date(1455689300345)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366316')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366316",
+	"LoadAtSurface": "8500",
+	"PositionAtSurface": "0.44",
+	"Timestamp": "/Date(1455689300022)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366317')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366317",
+	"LoadAtSurface": "8300",
+	"PositionAtSurface": "0.484",
+	"Timestamp": "/Date(1455689300095)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366318')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366318",
+	"LoadAtSurface": "8600",
+	"PositionAtSurface": "0.529",
+	"Timestamp": "/Date(1455689299895)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366319')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366319",
+	"LoadAtSurface": "8500",
+	"PositionAtSurface": "0.573",
+	"Timestamp": "/Date(1455689299077)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366320')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366320",
+	"LoadAtSurface": "8300",
+	"PositionAtSurface": "0.8",
+	"Timestamp": "/Date(1455689299645)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366321')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366321",
+	"LoadAtSurface": "8500",
+	"PositionAtSurface": "0.85",
+	"Timestamp": "/Date(1455689299525)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366322')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366322",
+	"LoadAtSurface": "16300",
+	"PositionAtSurface": "0.86",
+	"Timestamp": "/Date(1455689299041)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366323')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366323",
+	"LoadAtSurface": "16900",
+	"PositionAtSurface": "0.87",
+	"Timestamp": "/Date(1455689299295)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366324')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366324",
+	"LoadAtSurface": "16500",
+	"PositionAtSurface": "0.88",
+	"Timestamp": "/Date(1455689299018)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366325')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366325",
+	"LoadAtSurface": "16400",
+	"PositionAtSurface": "0.89",
+	"Timestamp": "/Date(1455689299067)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366326')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366326",
+	"LoadAtSurface": "16800",
+	"PositionAtSurface": "0.9",
+	"Timestamp": "/Date(1455689298099)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366327')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366327",
+	"LoadAtSurface": "16400",
+	"PositionAtSurface": "0.91",
+	"Timestamp": "/Date(1455689298884)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366328')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366328",
+	"LoadAtSurface": "16800",
+	"PositionAtSurface": "0.92",
+	"Timestamp": "/Date(1455689298077)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366329')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366329",
+	"LoadAtSurface": "17200",
+	"PositionAtSurface": "0.93",
+	"Timestamp": "/Date(1455689298645)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366330')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366330",
+	"LoadAtSurface": "16400",
+	"PositionAtSurface": "0.94",
+	"Timestamp": "/Date(1455689298521)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366331')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366331",
+	"LoadAtSurface": "16800",
+	"PositionAtSurface": "0.95",
+	"Timestamp": "/Date(1455689298394)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366332')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366332",
+	"LoadAtSurface": "17200",
+	"PositionAtSurface": "0.96",
+	"Timestamp": "/Date(1455689298027)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366333')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366333",
+	"LoadAtSurface": "16400",
+	"PositionAtSurface": "0.97",
+	"Timestamp": "/Date(1455689298149)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366334')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366334",
+	"LoadAtSurface": "16800",
+	"PositionAtSurface": "0.98",
+	"Timestamp": "/Date(1455689297949)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366335')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366335",
+	"LoadAtSurface": "17200",
+	"PositionAtSurface": "0.99",
+	"Timestamp": "/Date(1455689297749)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366336')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366336",
+	"LoadAtSurface": "17000",
+	"PositionAtSurface": "1",
+	"Timestamp": "/Date(1455689297626)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366337')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366337",
+	"LoadAtSurface": "17500",
+	"PositionAtSurface": "0.998",
+	"Timestamp": "/Date(1455689297426)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366338')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366338",
+	"LoadAtSurface": "19000",
+	"PositionAtSurface": "0.993",
+	"Timestamp": "/Date(1455689297315)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366339')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366339",
+	"LoadAtSurface": "19500",
+	"PositionAtSurface": "0.985",
+	"Timestamp": "/Date(1455689297195)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366340')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366340",
+	"LoadAtSurface": "19950",
+	"PositionAtSurface": "0.975",
+	"Timestamp": "/Date(1455689297073)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366341')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366341",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.962",
+	"Timestamp": "/Date(1455689296095)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366342')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366342",
+	"LoadAtSurface": "19900",
+	"PositionAtSurface": "0.947",
+	"Timestamp": "/Date(1455689296083)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366343')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366343",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.93",
+	"Timestamp": "/Date(1455689296712)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366344')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366344",
+	"LoadAtSurface": "19500",
+	"PositionAtSurface": "0.911",
+	"Timestamp": "/Date(1455689296595)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366345')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366345",
+	"LoadAtSurface": "19950",
+	"PositionAtSurface": "0.89",
+	"Timestamp": "/Date(1455689296048)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366346')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366346",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.867",
+	"Timestamp": "/Date(1455689296362)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366347')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366347",
+	"LoadAtSurface": "19900",
+	"PositionAtSurface": "0.842",
+	"Timestamp": "/Date(1455689296025)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366348')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366348",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.814",
+	"Timestamp": "/Date(1455689296015)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366349')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366349",
+	"LoadAtSurface": "19500",
+	"PositionAtSurface": "0.785",
+	"Timestamp": "/Date(1455689296034)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366350')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366350",
+	"LoadAtSurface": "19950",
+	"PositionAtSurface": "0.754",
+	"Timestamp": "/Date(1455689295091)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366351')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366351",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.721",
+	"Timestamp": "/Date(1455689295795)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366352')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366352",
+	"LoadAtSurface": "19900",
+	"PositionAtSurface": "0.686",
+	"Timestamp": "/Date(1455689295067)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366353')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366353",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.649",
+	"Timestamp": "/Date(1455689295589)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366354')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366354",
+	"LoadAtSurface": "19500",
+	"PositionAtSurface": "0.61",
+	"Timestamp": "/Date(1455689295047)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366355')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366355",
+	"LoadAtSurface": "19950",
+	"PositionAtSurface": "0.569",
+	"Timestamp": "/Date(1455689295358)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366356')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366356",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.528",
+	"Timestamp": "/Date(1455689295245)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366357')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366357",
+	"LoadAtSurface": "19900",
+	"PositionAtSurface": "0.485",
+	"Timestamp": "/Date(1455689295135)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366458')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366458",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.44",
+	"Timestamp": "/Date(1455689295025)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366459')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366459",
+	"LoadAtSurface": "19500",
+	"PositionAtSurface": "0.396",
+	"Timestamp": "/Date(1455689294091)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366460')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366460",
+	"LoadAtSurface": "19950",
+	"PositionAtSurface": "0.351",
+	"Timestamp": "/Date(1455689294795)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366461')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366461",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.306",
+	"Timestamp": "/Date(1455689294068)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366462')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366462",
+	"LoadAtSurface": "19900",
+	"PositionAtSurface": "0.263",
+	"Timestamp": "/Date(1455689294569)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366463')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366463",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.221",
+	"Timestamp": "/Date(1455689294455)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366464')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366464",
+	"LoadAtSurface": "19950",
+	"PositionAtSurface": "0.143",
+	"Timestamp": "/Date(1455689294212)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366465')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366465",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.109",
+	"Timestamp": "/Date(1455689294098)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366466')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366466",
+	"LoadAtSurface": "19900",
+	"PositionAtSurface": "0.079",
+	"Timestamp": "/Date(1455689293995)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366467')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366467",
+	"LoadAtSurface": "19800",
+	"PositionAtSurface": "0.054",
+	"Timestamp": "/Date(1455689293885)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366468')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366468",
+	"LoadAtSurface": "20000",
+	"PositionAtSurface": "0.033",
+	"Timestamp": "/Date(1455689292768)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366469')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366469",
+	"LoadAtSurface": "19000",
+	"PositionAtSurface": "0.017",
+	"Timestamp": "/Date(1455689292649)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366470')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366470",
+	"LoadAtSurface": "17000",
+	"PositionAtSurface": "0.006",
+	"Timestamp": "/Date(1455689292527)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366471')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366471",
+	"LoadAtSurface": "15000",
+	"PositionAtSurface": "0.001",
+	"Timestamp": "/Date(1455689292397)/"
+}, {
+	"__metadata": {
+		"uri": "https://mo-264c532f5.mo.sap.corp:51067/ProductionOverviewService.xsodata/Surface('148820652366472')",
+		"type": "default.SurfaceType"
+	},
+	"SurfaceNum": "148820652366472",
+	"LoadAtSurface": "8300",
+	"PositionAtSurface": "0",
+	"Timestamp": "/Date(1455689292267)/"
+}]

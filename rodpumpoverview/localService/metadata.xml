@@ -1,0 +1,69 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+			Namespace="default">
+			<EntityType Name="RodPumpProductionType">
+				<Key>
+					<PropertyRef Name="Thing"/>
+					<PropertyRef Name="Timestamp"/>
+				</Key>
+				<Property Name="Thing" Type="Edm.String" MaxLength="32"/>
+				<Property Name="Timestamp" Type="Edm.DateTime"/>
+				<Property Name="OilProdRate" Type="Edm.Double"/>
+				<Property Name="OilprodRateUOM" Type="Edm.String" MaxLength="5"/>
+				<Property Name="OilProdRateTarget" Type="Edm.String" MaxLength="256"/>
+				<Property Name="GasProdRate" Type="Edm.Double"/>
+				<Property Name="GasProdRateUOM" Type="Edm.String" MaxLength="5"/>
+				<Property Name="GasProdRateTarget" Type="Edm.String" MaxLength="256"/>
+				<Property Name="Speed" Type="Edm.Double"/>
+				<Property Name="SpeedUOM" Type="Edm.String" MaxLength="5"/>
+				<Property Name="SpeedTarget" Type="Edm.Double"/>
+				<Property Name="PumpEfficiency" Type="Edm.Double"/>
+				<Property Name="PumpEfficiencyUOM" Type="Edm.String" MaxLength="5"/>
+				<Property Name="TubingPressure" Type="Edm.Double"/>
+				<Property Name="TubingPressureUOM" Type="Edm.String" MaxLength="5"/>
+				<Property Name="CasingPressure" Type="Edm.Double"/>
+				<Property Name="CasingPressureUOM" Type="Edm.String" MaxLength="5"/>
+				<Property Name="LinePressure" Type="Edm.Double"/>
+				<Property Name="LinePressureUOM" Type="Edm.String" MaxLength="5"/>
+			</EntityType>
+			<EntityType Name="RodPumpMonitoringType">
+				<Key>
+					<PropertyRef Name="Thing"/>
+					<PropertyRef Name="Timestamp"/>
+				</Key>
+				<Property Name="Thing" Type="Edm.String" MaxLength="32"/>
+				<Property Name="Timestamp" Type="Edm.DateTime"/>
+				<Property Name="UnitSetPoint" Type="Edm.Double"/>
+				<Property Name="UnitSetPointUOM" Type="Edm.String" MaxLength="5"/>
+				<Property Name="LoadCell" Type="Edm.Double"/>
+				<Property Name="LoadCellUOM" Type="Edm.String" MaxLength="5"/>
+			</EntityType>
+			<EntityType Name="PumpType">
+				<Key>
+					<PropertyRef Name="PumpNum"/>
+				</Key>
+				<Property Name="PumpNum" Type="Edm.String" Nullable="false" MaxLength="2147483647"/>
+				<Property Name="Load" Type="Edm.Double"/>
+				<Property Name="Position" Type="Edm.Double"/>
+				<Property Name="Timestamp" Type="Edm.DateTime"/>
+			</EntityType>
+			<EntityType Name="SurfaceType">
+				<Key>
+					<PropertyRef Name="SurfaceNum"/>
+				</Key>
+				<Property Name="SurfaceNum" Type="Edm.String" Nullable="false" MaxLength="2147483647"/>
+				<Property Name="LoadAtSurface" Type="Edm.Double"/>
+				<Property Name="PositionAtSurface" Type="Edm.Double"/>
+				<Property Name="Timestamp" Type="Edm.DateTime"/>
+			</EntityType>
+			<EntityContainer Name="v2" m:IsDefaultEntityContainer="true">
+				<EntitySet Name="RodPumpProduction" EntityType="default.RodPumpProductionType"/>
+				<EntitySet Name="RodPumpMonitoring" EntityType="default.RodPumpMonitoringType"/>
+				<EntitySet Name="Pump" EntityType="default.PumpType"/>
+				<EntitySet Name="Surface" EntityType="default.SurfaceType"/>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
